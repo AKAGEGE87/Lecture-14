@@ -1,0 +1,69 @@
+.heroBox {
+  background-image: url("header.png");
+  background-size: cover;
+  background-position: center;
+  padding: 36px 48px;
+  height: 100vh;
+  max-height: 800px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 56px;
+  font-family: "Barlow", sans-serif;
+  color: white;
+}
+
+.box ul {
+  display: flex;
+  gap: 24px;
+  font-family: "Barlow", sans-serif;
+  list-style: none;
+}
+
+.headerLinks {
+  padding: 16px 32px;
+  border-radius: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.headerLinks:hover {
+  background-color: #71dbf0;
+}
+
+.box ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: semi-bold;
+}
+
+.heroText {
+  margin-top: 105px;
+  font-family: "Fraunces", serif;
+  font-size: 56px;
+  color: white;
+}
+
+.burgerMenu {
+  display: none;
+  width: 24px;
+  height: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .box ul {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}

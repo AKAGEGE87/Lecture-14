@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+.section1 {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1Box {
+  width: 100vw;
+  max-width: 600px;
+  height: 100vh;
+  max-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-inline: 165px 110px;
+  text-align: left;
+}
+
+.section1Title {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: "Fraunces", serif;
+}
+
+.section1Text {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: semi-bold;
+  color: #808397;
+  font-family: "Barlow", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .section1 {
+    flex-direction: column-reverse;
+  }
+
+  .section1Box {
+    align-items: center;
+    padding: 4px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
