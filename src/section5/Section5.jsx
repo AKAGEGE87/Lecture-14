@@ -55,16 +55,10 @@ const Section5 = () => {
   return (
     <footer className="section5">
       <div className="imageBox">
-        {img.map((img, index) => {
-          return (
-            <img
-              key={index}
-              src={`./${img.url}`}
-              alt=""
-              className="section5img"
-            />
-          );
-        })}
+        <div className="img1"></div>
+        <div className="img2"></div>
+        <div className="img3"></div>
+        <div className="img4"></div>
       </div>
 
       <div className="section5Box">

@@ -1,8 +1,33 @@
 .imageBox {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   /* margin: auto; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.img1 {
+  background-image: url("./Bitmap.jpg");
+}
+.img2 {
+  background-image: url("./Bitmap2.jpg");
+}
+.img3 {
+  background-image: url("./Bitmap3.jpg");
+}
+.img4 {
+  background-image: url("./Bitmap4.jpg");
+}
+
+.img1,
+.img2,
+.img3,
+.img4 {
+  position: relative;
+  max-width: 360px;
+  height: 360px;
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
 }
 
 .section5img {
@@ -77,4 +102,19 @@ ul {
 
 .section5soc:hover {
   color: white;
+}
+
+@media (max-width: 768px) {
+  .section5 {
+    margin: auto;
+    /* max-width: 375px; */
+  }
+  .imageBox {
+    /* background-color: red; */
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    margin: 0;
+    /* max-width: 188px; */
+    /* margin: auto; */
+  }
 }

@@ -1,14 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
 .section1 {
-  background-color: aquamarine;
   display: flex;
   justify-content: space-between;
 }
 
 .section1Box {
   width: 100vw;
-  max-width: 600px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding-inline: 165px 110px; */
+  text-align: left;
+  max-width: 445px;
+  max-height: 285px;
+  margin: auto;
+}
+.section1Img {
+  background-image: url("./1.png");
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  max-width: 720px;
   height: 100vh;
   max-height: 720px;
   display: flex;
@@ -37,13 +53,17 @@
 @media (max-width: 768px) {
   .section1 {
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   .section1Box {
     align-items: center;
-    padding: 4px;
+    margin-block: 64px;
     text-align: center;
     justify-content: center;
-    margin: auto;
+    max-width: 327px;
+    max-height: 309px;
+    /* margin: 40px; */
+    width: 100%;
   }
 }

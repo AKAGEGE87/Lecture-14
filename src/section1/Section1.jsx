@@ -15,7 +15,7 @@ const Section1 = () => {
         {/* <button className="section1Btn">LEARN MORE</button> */}
         <Button title="LEARN MORE" />
       </div>
-      <img src="./1.png" alt="" />
+      <div className="section1Img"></div>
     </div>
   );
 };

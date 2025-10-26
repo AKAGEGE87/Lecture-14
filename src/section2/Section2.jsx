@@ -4,13 +4,9 @@ import Button from "../button/Button";
 
 const Section2 = () => {
   return (
-    <div
-      className=""
-      style={{
-        display: "flex"
-      }}
-    >
-      <img src="./2.png" alt="" />
+    <div className="Section2">
+      <div className="section2Img"></div>
+
       <div className="Section2Box">
         <h1 className="Section2Title">Transform your brand</h1>
         <p className="Section2Text">

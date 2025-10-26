@@ -1,4 +1,6 @@
 .section4 {
+  display: flex;
+  flex-direction: column;
   margin-block: 100px;
 }
 
@@ -45,4 +47,19 @@
   font-weight: semi-bold;
   color: #a7aaad;
   font-family: "Barlow", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .cardBox {
+    flex-direction: column;
+    padding-inline: 20px;
+    margin-top: 40px;
+    gap: 50px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+    gap: 40px;
+  }
 }
