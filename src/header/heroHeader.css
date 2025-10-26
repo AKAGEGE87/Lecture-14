@@ -1,16 +1,38 @@
+/* Hero Section */
 .heroBox {
   background-image: url("header.png");
   background-size: cover;
   background-position: center;
-  padding: 36px 48px;
   height: 100vh;
   max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 48px;
+  position: relative;
+  z-index: 1;
 }
 
-.box {
+.heroText {
+  font-family: "Fraunces", serif;
+  font-size: 56px;
+  color: white;
+  margin-top: 105px;
+}
+
+.arrow {
+  width: 40px;
+  height: 80px;
+  margin-top: 50px;
+}
+
+/* Header */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1002; /* მიუთითეთ, რომ header ყოველთვის overlay–ზე იყოს */
 }
 
 .logo {
@@ -19,50 +41,103 @@
   color: white;
 }
 
-.box ul {
+/* Desktop Navigation */
+.desktopNav {
   display: flex;
   gap: 24px;
-  font-family: "Barlow", sans-serif;
   list-style: none;
+  font-family: "Barlow", sans-serif;
 }
 
-.headerLinks {
-  padding: 16px 32px;
-  border-radius: 18px;
-  transition: background-color 0.3s ease;
-}
-
-.headerLinks:hover {
-  background-color: #71dbf0;
-}
-
-.box ul li a {
+.desktopNav li a {
   text-decoration: none;
   font-size: 18px;
   color: white;
-  font-weight: semi-bold;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
 }
 
-.heroText {
-  margin-top: 105px;
-  font-family: "Fraunces", serif;
-  font-size: 56px;
-  color: white;
+.desktopNav li a:hover {
+  background-color: #71dbf0;
 }
 
+/* Burger Icon */
 .burgerMenu {
   display: none;
-  width: 24px;
-  height: 18px;
+  font-size: 2rem;
   color: white;
   cursor: pointer;
+  z-index: 1003;
 }
 
+/* Mobile Overlay */
+.mobileMenuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1001;
+}
+
+/* Mobile Menu Container */
+.mobileMenuContent {
+  width: 80%;
+  max-width: 300px;
+  margin-top: 100px;
+  margin-right: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.3s ease-out;
+  z-index: 1002;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile Navigation */
+.mobileNav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobileNav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mobileNav li a:hover {
+  background-color: #c32f2f;
+  color: white;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-  .box ul {
+  .desktopNav {
     display: none;
   }
-
   .burgerMenu {
     display: block;
   }

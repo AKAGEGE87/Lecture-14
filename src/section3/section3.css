@@ -51,3 +51,25 @@
 .section3box2text {
   color: #19536c;
 }
+
+@media (max-width: 768px) {
+  .section3box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .section3box1,
+  .section3box2 {
+    width: 100%;
+    min-height: 600px;
+    margin: auto;
+  }
+
+  .section3box1title,
+  .section3box2title,
+  .section3box1text,
+  .section3box2text {
+    width: 90%;
+    max-width: 339px;
+  }
+}

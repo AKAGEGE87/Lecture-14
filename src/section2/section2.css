@@ -1,6 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 
+.Section2 {
+  display: flex;
+}
+
+.section2Img {
+  background-image: url("./2.png");
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  max-width: 720px;
+  height: 100vh;
+  max-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-inline: 165px 110px;
+  text-align: left;
+}
 .Section2Box {
+  width: 100vw;
+  /* max-width: 720px; */
+  height: 100vh;
+  max-height: 720px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,4 +46,22 @@
   font-weight: semi-bold;
   color: #808397;
   font-family: "Barlow", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .Section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Section2Box {
+    align-items: center;
+    margin-block: 64px;
+    text-align: center;
+    justify-content: center;
+    /* max-width: 327px; */
+    max-height: 309px;
+    /* margin: 40px; */
+    /* width: 100%; */
+  }
 }
