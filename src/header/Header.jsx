@@ -44,8 +44,12 @@ const Header = () => {
           >
             <ul className="mobileNav">
               {mobileLinks.map((link, index) => (
-                <li key={index}>
-                  <a href={link.link} onClick={closeMenu}>
+                <li key={index} className="burgerMenuList">
+                  <a
+                    href={link.link}
+                    onClick={closeMenu}
+                    className="burgerMenuListTitle"
+                  >
                     {link.label}
                   </a>
                 </li>

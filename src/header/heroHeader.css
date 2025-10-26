@@ -1,4 +1,3 @@
-/* Hero Section */
 .heroBox {
   background-image: url("header.png");
   background-size: cover;
@@ -25,14 +24,13 @@
   margin-top: 50px;
 }
 
-/* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   position: relative;
-  z-index: 1002; /* მიუთითეთ, რომ header ყოველთვის overlay–ზე იყოს */
+  z-index: 1002;
 }
 
 .logo {
@@ -41,7 +39,6 @@
   color: white;
 }
 
-/* Desktop Navigation */
 .desktopNav {
   display: flex;
   gap: 24px;
@@ -51,19 +48,27 @@
 
 .desktopNav li a {
   text-decoration: none;
+  width: 140px;
+  height: 56px;
   font-size: 18px;
   color: white;
   font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: background-color 0.3s;
+  padding: 16px 30px;
+  border-radius: 28px;
+  /* transition: background-color 0.3s; */
 }
 
 .desktopNav li a:hover {
-  background-color: #71dbf0;
+  background-color: #eff5f6;
+  color: black;
+  text-transform: uppercase;
 }
 
-/* Burger Icon */
+.desktopNav li a:active {
+  background-color: #eff5f64c;
+  color: white;
+}
+
 .burgerMenu {
   display: none;
   font-size: 2rem;
@@ -72,31 +77,53 @@
   z-index: 1003;
 }
 
-/* Mobile Overlay */
 .mobileMenuOverlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 300px;
+  /* height: 300px; */
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: flex-end;
   z-index: 1001;
 }
 
-/* Mobile Menu Container */
 .mobileMenuContent {
   width: 80%;
-  max-width: 300px;
+  max-width: 329px;
   margin-top: 100px;
   margin-right: 20px;
   background-color: white;
-  padding: 20px;
+  padding: 63px 93px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   animation: slideIn 0.3s ease-out;
   z-index: 1002;
+}
+
+.burgerMenuList {
+  z-index: 1003;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.burgerMenuListTitle {
+  font-family: barlow, sans-serif;
+  font-size: 20px;
+  color: #808397;
+  cursor: pointer;
+  padding: 16px 32px;
+  font-weight: 600;
+  border-radius: 30px;
+}
+
+.burgerMenuListTitle:hover {
+  background-color: #fbd600;
+  color: black;
+  /* border-radius: 30px; */
+  text-transform: uppercase;
 }
 
 @keyframes slideIn {
@@ -108,7 +135,6 @@
   }
 }
 
-/* Mobile Navigation */
 .mobileNav {
   list-style: none;
   padding: 0;
@@ -118,7 +144,7 @@
   gap: 15px;
 }
 
-.mobileNav li a {
+/* .mobileNav li a {
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -126,11 +152,9 @@
   padding: 10px 15px;
   border-radius: 8px;
   transition: background-color 0.3s, color 0.3s;
-}
+} */
 
 .mobileNav li a:hover {
-  background-color: #c32f2f;
-  color: white;
 }
 
 /* Media Queries */
