@@ -3,11 +3,11 @@
   height: 720px;
 }
 .section3box1 {
-  background-image: url("./3.png");
+  background-image: url("../images/3.png");
 }
 
 .section3box2 {
-  background-image: url("./4.png");
+  background-image: url("../images/4.png");
 }
 
 .section3box1,

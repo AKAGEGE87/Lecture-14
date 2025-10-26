@@ -6,16 +6,16 @@
 }
 
 .img1 {
-  background-image: url("./Bitmap.jpg");
+  background-image: url("../images/Bitmap.jpg");
 }
 .img2 {
-  background-image: url("./Bitmap2.jpg");
+  background-image: url("../images/Bitmap2.jpg");
 }
 .img3 {
-  background-image: url("./Bitmap3.jpg");
+  background-image: url("../images/Bitmap3.jpg");
 }
 .img4 {
-  background-image: url("./Bitmap4.jpg");
+  background-image: url("../images/Bitmap4.jpg");
 }
 
 .img1,
